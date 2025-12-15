@@ -4,8 +4,8 @@
   <h1>{{ car.model }}</h1>
 
   <div class="mb-3">
-    <a href="{% url 'taxi:car-edit' car.pk %}" class="btn btn-primary btn-sm">
-      Edit car
+    <a href="{% url 'taxi:car-update' car.pk %}" class="btn btn-primary btn-sm">
+      Update car
     </a>
     <a href="{% url 'taxi:car-delete' car.pk %}" class="btn btn-danger btn-sm">
       Delete car
