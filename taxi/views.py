@@ -45,14 +45,12 @@ class ManufacturerListView(LoginRequiredMixin, generic.ListView):
 class ManufacturerCreateView(LoginRequiredMixin, CreateView):
     model = Manufacturer
     form_class = ManufacturerForm
-    template_name = "taxi/manufacturer_form.html"
     success_url = reverse_lazy("taxi:manufacturer-list")
 
 
 class ManufacturerUpdateView(LoginRequiredMixin, UpdateView):
     model = Manufacturer
     form_class = ManufacturerForm
-    template_name = "taxi/manufacturer_form.html"
     success_url = reverse_lazy("taxi:manufacturer-list")
 
 
@@ -80,14 +78,12 @@ class CarDetailView(LoginRequiredMixin, generic.DetailView):
 class CarCreateView(LoginRequiredMixin, CreateView):
     model = Car
     form_class = CarForm
-    template_name = "taxi/car_form.html"
     success_url = reverse_lazy("taxi:car-list")
 
 
 class CarUpdateView(LoginRequiredMixin, UpdateView):
     model = Car
     form_class = CarForm
-    template_name = "taxi/car_form.html"
     success_url = reverse_lazy("taxi:car-list")
 
 
